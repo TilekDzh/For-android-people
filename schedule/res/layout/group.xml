@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    
+    <RelativeLayout 
+    android:id="@+id/teachlayout"
+    android:layout_width="match_parent"
+    android:layout_height="25dp"
+    android:orientation="horizontal" >
+   <TextView 
+    
+        android:id="@+id/teach"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+      />
+    <TextView 
+    
+        android:text="Teacher:" 
+        android:layout_toLeftOf="@id/teach"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      />
+    </RelativeLayout>
+    <RelativeLayout
+    android:id="@+id/roomlayout"
+    android:layout_width="match_parent"
+    android:layout_height="25dp"
+    android:orientation="horizontal">
+    
+   
+     <TextView 
+    
+        android:id="@+id/room"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+      />
+    <TextView android:text="Room:" 
+        android:layout_toLeftOf="@id/room"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       />
+    </RelativeLayout>
+    
+    <RelativeLayout
+    android:id="@+id/timelayout"
+    android:layout_width="match_parent"
+    android:layout_height="25dp"
+    android:orientation="horizontal">
+     <TextView 
+    
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+      />
+    <TextView android:text="Time:" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/time"
+        />
+    </RelativeLayout>
+    <TextView android:text="Your Group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        />
+	<ListView
+        android:id="@+id/listgroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+	
+
+
+</LinearLayout>
