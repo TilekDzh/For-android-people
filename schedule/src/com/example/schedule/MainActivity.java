@@ -2,24 +2,17 @@ package com.example.schedule;
 
 
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
-
-import android.os.Bundle;
-import android.app.Activity;
-import android.app.Application;
 import android.app.TabActivity;
-import android.content.Context;
 import android.content.Intent;
 import android.content.res.Resources;
-import android.view.Menu;
-import android.widget.ListView;
-import android.widget.SimpleAdapter;
+import android.os.Bundle;
 import android.widget.TabHost;
+
+import com.auca.services.data.NotificationServiceImpl;
 
 public class MainActivity extends TabActivity {
 
+	@SuppressWarnings({ "deprecation", "static-access" })
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -38,6 +31,7 @@ public class MainActivity extends TabActivity {
                 .setContent(Thu));
         mTabHst.setCurrentTab(0);
         
+        new NotificationServiceImpl().getNotificationsForUser(); 
 	}
 
 
