@@ -26,5 +26,11 @@
         <activity android:name=".Monday" />
         <activity android:name=".Thursday" />
         <activity android:name=".Group" />
+<<<<<<< HEAD
   	</application>
 </manifest>
+=======
+    </application>
+
+</manifest>
+>>>>>>> fcdf20c9a7eed95e19f66aecca6ad87d01b2f92d
